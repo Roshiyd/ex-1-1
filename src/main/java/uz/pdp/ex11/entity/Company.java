@@ -22,6 +22,6 @@ public class Company {
     @Column(nullable = false)
     private String directorName;
 
-    @ManyToOne(optional = false)
+    @OneToOne(optional = false)
     private Address address;
 }

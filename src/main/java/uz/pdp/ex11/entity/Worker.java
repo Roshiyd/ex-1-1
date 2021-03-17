@@ -21,7 +21,7 @@ public class Worker {
     @Column(unique = true,nullable = false)
     private String phoneNumber;
 
-    @ManyToOne
+    @OneToOne
     private Address address;
 
     @ManyToOne
